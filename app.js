@@ -1,11 +1,33 @@
+//Variables
 let numeroSecreto = 6;
 let numeroUsario = prompt("Dame un numero entre 1 y 10: ");
 console.log(numeroUsario);
 
+/*
+Este codigo realiza
+la comparacion
+*/
+
 if (numeroSecreto == numeroUsario) {
-    alert("GAME OVER");
+    //Acetamos, fue verdadera la condicion
+    alert("Acertaste el numero");
+}else{
+    //La condicion no se cumplio
+    alert("No acertaste el numero");
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/*
 let mensajeDeBienvenida = 'Bienvenido a la aplicación';
 alert('mensajeDeBienvenida');
 
@@ -20,4 +42,5 @@ nombre = prompt('Ingrese el nombre:');
 edad = prompt('Ingrese la edad:');
 if (edad >= 18){
     alert('¡Puedes obtener tu licencia de conducir!');
-}
+}*/
+
