@@ -1,6 +1,6 @@
 //Variables
 
-/* let numeroSecreto = 5;
+let numeroSecreto = 5;
 let numeroUsario = 0;
 let intento = 1;
 let palabraVeces = 'vez';
@@ -8,14 +8,13 @@ let palabraVeces = 'vez';
 while (numeroUsario!=numeroSecreto) {
     numeroUsario = prompt("Dame un numero entre 1 y 10: ");
     console.log(numeroUsario);
- */
 
     /*
     Este codigo realiza
     la comparacion
     */
 
-    /* if (numeroSecreto == numeroUsario) {
+    if (numeroSecreto == numeroUsario) {
         //Acetamos, fue verdadera la condicion
         alert(`Acertaste, el numero es ${numeroSecreto}. lo hiciste en ${intento} ${palabraVeces}`);
     } else {
@@ -29,9 +28,13 @@ while (numeroUsario!=numeroSecreto) {
         //incrementamos el contador
         intento = intento + 1;
         palabraVeces = 'veces';
+        if(intento > 3){
+            alert("Llegaste al numero maximo de intentos");
+            break;
+        }
 
     }
-} */
+}
 
 /* Crea un contador que comience en 1 y vaya hasta 10 usando un bucle 'while'. Muestra cada número. */
 /* let contador = 1;
@@ -49,11 +52,11 @@ while (contador>=0){
 } */
 
 /* Crea un programa de cuenta regresiva. Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador. */
-let numero = prompt("Ingrese un numero: ");
+/* let numero = prompt("Ingrese un numero: ");
 while (numero >= 0){
     console.log(numero);
     numero--;
-}
+} */
 
 /* Crea un programa de cuenta progresiva. Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador. */
 
