@@ -1,6 +1,9 @@
 //Variables
 let numeroSecreto = 5;
 let numeroUsario = 0;
+let intento = 1;
+let palabraVeces = 'vez';
+
 while (numeroUsario!=numeroSecreto) {
     numeroUsario = prompt("Dame un numero entre 1 y 10: ");
     console.log(numeroUsario);
@@ -12,7 +15,7 @@ while (numeroUsario!=numeroSecreto) {
 
     if (numeroSecreto == numeroUsario) {
         //Acetamos, fue verdadera la condicion
-        alert("Acertaste, el numero");
+        alert(`Acertaste, el numero es ${numeroSecreto}. lo hiciste en ${intento} ${palabraVeces}`);
     } else {
         if (numeroUsario > numeroSecreto) {
             alert("El numero secreto es menor");
@@ -21,6 +24,10 @@ while (numeroUsario!=numeroSecreto) {
         }
         //La condicion no se cumplio
         //alert("No acertaste el numero");
+        //incrementamos el contador
+        intento = intento + 1;
+        palabraVeces = 'veces';
+
     }
 }
 
