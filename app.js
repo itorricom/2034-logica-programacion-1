@@ -1,21 +1,28 @@
 //Variables
-/* let numeroSecreto = 6;
-let numeroUsario = prompt("Dame un numero entre 1 y 10: ");
-console.log(numeroUsario);
- */
-/*
-Este codigo realiza
-la comparacion
-*/
+let numeroSecreto = 5;
+let numeroUsario = 0;
+while (numeroUsario!=numeroSecreto) {
+    numeroUsario = prompt("Dame un numero entre 1 y 10: ");
+    console.log(numeroUsario);
 
-/* if (numeroSecreto == numeroUsario) {
-    //Acetamos, fue verdadera la condicion
-    alert("Acertaste, el numero");
-}else{
-    //La condicion no se cumplio
-    alert("No acertaste el numero");
+    /*
+    Este codigo realiza
+    la comparacion
+    */
+
+    if (numeroSecreto == numeroUsario) {
+        //Acetamos, fue verdadera la condicion
+        alert("Acertaste, el numero");
+    } else {
+        if (numeroUsario > numeroSecreto) {
+            alert("El numero secreto es menor");
+        } else {
+            alert("El numero secret es mayor");
+        }
+        //La condicion no se cumplio
+        //alert("No acertaste el numero");
+    }
 }
- */
 
 //incorrecto
 /* let porcentajeDescuento = 0;
@@ -74,8 +81,8 @@ alert(`Su saldo es: ${saldo}`); */
 
 /* Pide al usuario que ingrese su nombre mediante un prompt. Luego, muestra una alerta de bienvenida usando ese nombre.
  */
-let nombre = prompt("Ingrese su nombre: ");
-alert(`Bienvenido: ${nombre}`);
+/* let nombre = prompt("Ingrese su nombre: ");
+alert(`Bienvenido: ${nombre}`); */
 
 
 
