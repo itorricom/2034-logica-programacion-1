@@ -1,6 +1,6 @@
 //Variables
 
-let numeroSecreto = Math.floor(Math.random() *10);
+let numeroSecreto = Math.floor(Math.random() *10)+1;
 console.log(numeroSecreto);
 let numeroUsario = 0;
 let intento = 1;
@@ -8,9 +8,8 @@ let intento = 1;
 let maximoIntentos = 3;
 
 while (numeroUsario!=numeroSecreto) {
-    numeroUsario = prompt("Dame un numero entre 1 y 10: ");
+    numeroUsario = parseInt( prompt("Dame un numero entre 1 y 10: "));
     
-
     /*
     Este codigo realiza
     la comparacion
