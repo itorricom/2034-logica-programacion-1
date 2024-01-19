@@ -1,6 +1,7 @@
 //Variables
 
-let numeroSecreto = 5;
+let numeroSecreto = Math.floor(Math.random() *10);
+console.log(numeroSecreto);
 let numeroUsario = 0;
 let intento = 1;
 //let palabraVeces = 'vez';
@@ -8,7 +9,7 @@ let maximoIntentos = 3;
 
 while (numeroUsario!=numeroSecreto) {
     numeroUsario = prompt("Dame un numero entre 1 y 10: ");
-    console.log(numeroUsario);
+    
 
     /*
     Este codigo realiza
