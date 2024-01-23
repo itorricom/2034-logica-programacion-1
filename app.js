@@ -1,6 +1,6 @@
 //Variables
-
-let numeroSecreto = Math.floor(Math.random() *10)+1;
+let numeros = prompt('Ingrese hasta que numero generar aleatorios:');
+let numeroSecreto = Math.floor(Math.random() *numeros)+1;
 console.log(numeroSecreto);
 let numeroUsario = 0;
 let intento = 1;
@@ -8,7 +8,7 @@ let intento = 1;
 let maximoIntentos = 3;
 
 while (numeroUsario!=numeroSecreto) {
-    numeroUsario = parseInt( prompt("Dame un numero entre 1 y 10: "));
+    numeroUsario = parseInt( prompt(`Dame un numero entre 1 y ${numeros} `));
     
     /*
     Este codigo realiza
@@ -22,7 +22,7 @@ while (numeroUsario!=numeroSecreto) {
         if (numeroUsario > numeroSecreto) {
             alert("El numero secreto es menor");
         } else {
-            alert("El numero secret es mayor");
+            alert("El numero secreto es mayor");
         }
         //La condicion no se cumplio
         //alert("No acertaste el numero");
